@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import '../styles/globals.css'
@@ -10,6 +12,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>Codevolution</title>
+        <meta name='description' content='excellent youtube channel' />
+      </Head>
+
       <Header />
       <Component {...pageProps} />
       <Footer />
